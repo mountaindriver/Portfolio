@@ -14,9 +14,7 @@
         </p>
   </div>
 
-  <!-- ![Tech Blogger Screenshot](img\screencapture-localhost-3001-2022-10-15-17_20_19.png "Tech Blogger Screenshot") -->
-  
-  
+
   <!-- TABLE OF CONTENTS -->
   <details>
     <summary>Table of Contents</summary>
