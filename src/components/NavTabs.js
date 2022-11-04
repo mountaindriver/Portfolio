@@ -28,12 +28,12 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li>
       <li className="nav-item">
         <a
-          href="#Work"
-          onClick={() => handlePageChange('Work')}
-          // Check to see if the currentPage is `Work`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === 'Work' ? 'nav-link active' : 'nav-link'}
+          href="#Portfolio"
+          onClick={() => handlePageChange('Portfolio')}
+          // Check to see if the currentPage is `Portfolio`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+          className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
         >
-          Work
+          Portfolio
         </a>
       </li>
       <li className="nav-item">

@@ -1,17 +1,22 @@
 import React, { useState } from 'react';
+// Components
 import NavTabs from './NavTabs';
-import Work from './pages/Work';
+import Header from './Header';
+import Footer from './Footer';
+
+// Pages
+import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Contact from './pages/Contact';
 
 
-export default function Portfolio(){
-    const [currentPage, setCurrentPage] = useState('Work');
+export default function PortfolioContainer(){
+    const [currentPage, setCurrentPage] = useState('Portfolio');
 
     // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
     const renderPage = () => {
-      if (currentPage === 'Work') {
-        return <Work />;
+      if (currentPage === 'Portfolio') {
+        return <Portfolio />;
       }
       if (currentPage === 'About') {
         return <About />;
@@ -28,8 +33,12 @@ export default function Portfolio(){
       <div>
         {/* We are passing the currentPage from state and the function to update it */}
         <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+        <Header />
         {/* Here we are calling the renderPage method which will return a component  */}
         {renderPage()}
+        {/* no footer on contact page */}
+        {currentPage === 'Contact'? null
+        :<Footer />}
       </div>
     );
 }
