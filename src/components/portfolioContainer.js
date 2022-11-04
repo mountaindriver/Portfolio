@@ -11,13 +11,96 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
 
+const projects = [
+  {
+    id: 1,
+    name: "Tech Blogger",
+    description: 'This is a Full Stack single page application that uses a mySQL Database and is hosted on Heroku.  It uses many differenet technology such as HTML, CSS, bootstrap, JavaScript, Express.js, Node.js, mySQL, Sequilize(mySQL ORM), bcrypt, and was developed with nodemon.',
+    url: 'https://gentle-caverns-83915.herokuapp.com/login',
+    image: `./assests/images/screencapture-gentle-caverns-83915-herokuapp-2022-11-04-13_33_03.png`,
+    technologies: [
+      'HTML', 
+      'CSS', 
+      'bootstrap', 
+      'JavaScript', 
+      'Express.js', 
+      'Node.js', 
+      'mySQL', 
+      'Sequilize', 
+      'bcrypt',
+    ]
+  },
+  {
+    id: 2,
+    name: 'Weather Dashboard',
+    description: 'This is a weather dashboard developed from scratch using  HTML, CSS, JS, Bootstrap, Jquery, and Third party API OpenWeather One Call API.',
+    url: 'https://mountaindriver.github.io/Weather-API-Dashboard/',
+    image: `./assests/images/screencapture-mountaindriver-github-io-Weather-API-Dashboard-2022-11-04-13_38_31.png`,
+    technologies: [
+      'HTML', 
+      'CSS', 
+      'JS', 
+      'Bootstrap', 
+      'Jquery',
+      'Third Party API'
+    ]
+  },
+  {
+    id: 3,
+    name: 'Covid Travling Guide',
+    description: `Collaborative Team Project to develop a front end website that uses multipe Third Party API's to create a tool to help travelers decide where to go for vaction.`,
+    url: 'https://mountaindriver.github.io/super-team-project/',
+    image: './assests/images/screencapture-mountaindriver-github-io-super-team-project-2022-11-04-13_37_19.png',
+    technologies: [
+      'HTML', 
+      'CSS', 
+      'JS', 
+      'Bootstrap', 
+      'Jquery',
+      'Third Party API'
+    ]
+  },
+  {
+    id: 4,
+    name: 'Recipe Finder',
+    description: `Collaborative Team Project to develop a Full Stack Application.This app allows users to post to and browse a recipe database.`,
+    url: 'https://murmuring-sea-48556.herokuapp.com/',
+    image: 'https://user-images.githubusercontent.com/106941418/193163516-b5a97c92-7a7d-400b-955e-db0a362c4d94.png',
+    technologies: [
+      'HTML', 
+      'CSS', 
+      'bootstrap', 
+      'JavaScript', 
+      'Express.js', 
+      'Node.js', 
+      'mySQL', 
+      'Sequilize', 
+      'bcrypt',
+    ]
+  },
+  {
+    id: 5,
+    name: 'NoSQL API for Social Network',
+    description: 'A API that is created using MongoDB and JavaScript. The database uses Express.js and Mongoose as the ORM. This is not a deployed website but there is a link to a walk through video in the README.',
+    url: 'https://github.com/mountaindriver/NoSQL-API-for-Social-Network',
+    image: `assests/images/screencapture-github-mountaindriver-NoSQL-API-for-Social-Network-2022-11-04-13_31_00.png`,
+    technologies: [
+      'MonogoDB',
+      'Mongoose',
+      'Node.js',
+      'Express',
+      'Insomnia',
+    ]
+  },
+]
+
 export default function PortfolioContainer(){
     const [currentPage, setCurrentPage] = useState('Portfolio');
 
     // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
     const renderPage = () => {
       if (currentPage === 'Portfolio') {
-        return <Portfolio />;
+        return <Portfolio projects={projects} />;
       }
       if (currentPage === 'About') {
         return <About />;
@@ -28,7 +111,7 @@ export default function PortfolioContainer(){
       if (currentPage === 'Resume'){
         return <Resume />
       }
-      return <Portfolio />;
+      return <Portfolio projects={projects} />;
     };
   
     const handlePageChange = (page) => setCurrentPage(page);

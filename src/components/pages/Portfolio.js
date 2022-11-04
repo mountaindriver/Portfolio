@@ -1,6 +1,7 @@
 import React from 'react';
 
-export default function Blog() {
+
+export default function Portfolio(projects) {
   return (
     <div>
       <h1>Portfolio</h1>
@@ -19,6 +20,14 @@ export default function Blog() {
         bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
         est ligula suscipit velit, sed bibendum turpis dui in sapien.
       </p>
+
+      <ul>
+        {projects.projects.map((project) =>(
+          <li key={project.id}>
+           { project.name }
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
