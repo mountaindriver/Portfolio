@@ -64,38 +64,56 @@ function Form() {
   };
 
   return (
-    <div>
+    <section>
       <form className="form">
-      <input
-          value={name}
-          name="name"
-          onChange={handleInputChange}
-          type="name"
-          placeholder="Name"
-        />
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="Email"
-        />
-        <textarea
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Message"
-        />
-
-        <button type="button" onClick={handleFormSubmit}>Submit</button>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon3">Email</span>
+          </div>
+          <input
+            class="form-control"
+            value={email}
+            name="email"
+            onChange={handleInputChange}
+            type="email"
+            placeholder="Email"
+          />
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon3">Name</span>
+          </div>
+          <input
+            class="form-control"
+            value={name}
+            name="name"
+            onChange={handleInputChange}
+            type="name"
+            placeholder="Name"
+          />
+        </div>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon3">Message</span>
+          </div>
+          <textarea
+            class="form-control"
+            value={message}
+            message="message"
+            onChange={handleInputChange}
+            type="message"
+            placeholder="Message"
+          />
+        </div>
+        <br></br>
+        <button className="btn btn-success btn-lg btn-block" onClick={handleFormSubmit}>Send</button>
       </form>
       {errorMessage && (
         <div>
           <p className="error-text">{errorMessage}</p>
         </div>
       )}
-    </div>
+    </section>
   );
 }
 

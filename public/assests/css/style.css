@@ -1,0 +1,36 @@
+body{
+    background-image: url(../images/PXL_20221002_183657650.jpg);
+    background-size: 200%;
+}
+
+.nav{
+    margin-bottom: 2rem;
+    justify-content: center;
+    background-color: #e4eeee;
+}
+
+header{
+    font-family: 'Handlee', cursive;
+}
+
+
+section, h1 {
+    max-width: 80%;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgb(252, 248, 226);
+    opacity: 0.9;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: rgb(0, 105, 4);
+    color: aliceblue;
+    display: flex;
+    
+}
+
+.contact {
+    font-family: 'Handlee', cursive;
+}

@@ -2,16 +2,14 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div>
+    <section>
+      <img class="mx-auto" src='./assests/images/outdoorsyProfile.jpg' alt='Lucas Freigenberg Mountian Biking' width='400px' height='300px' />
       <h1>About Me</h1>
       <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+        Full Stack Web Developer, who loves to build, problem solve and learn new technologies! The best moments in life are when thing start working and when my knowledge is growing! I primarily work with the MERN Stack.</p>
+      <p>
+        I am a active outdoorsy person in my free time and am know to do some XC mountain bike races.
       </p>
-    </div>
+    </section>
   );
 }
