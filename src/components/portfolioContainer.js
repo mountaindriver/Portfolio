@@ -8,6 +8,7 @@ import Footer from './Footer';
 import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Resume from './pages/Resume';
 
 
 export default function PortfolioContainer(){
@@ -24,7 +25,10 @@ export default function PortfolioContainer(){
       if (currentPage === 'Contact') {
         return <Contact />;
       }
-      return <Contact />;
+      if (currentPage === 'Resume'){
+        return <Resume />
+      }
+      return <Portfolio />;
     };
   
     const handlePageChange = (page) => setCurrentPage(page);
@@ -37,8 +41,7 @@ export default function PortfolioContainer(){
         {/* Here we are calling the renderPage method which will return a component  */}
         {renderPage()}
         {/* no footer on contact page */}
-        {currentPage === 'Contact'? null
-        :<Footer />}
+        <Footer />
       </div>
     );
 }
