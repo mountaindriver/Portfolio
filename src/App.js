@@ -1,12 +1,12 @@
-import Homepage from './componets/home.js'
+import Portfolio from './componets/portfolioContainer.js'
 
 
 function App() {
   return (
-    <div>
-      <Homepage />
+    <div className="portfolio-app">
+      <Portfolio />
     </div>
-  )
+  );
 }
 
 export default App;
