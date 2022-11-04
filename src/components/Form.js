@@ -37,6 +37,24 @@ function Form() {
       // We want to exit out of this code block if something is wrong so that the user can correct it
       return;
     }
+    // If email is blank we let the user know it is required
+    if (email === '') {
+      setErrorMessage('Email is Required');
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+    }
+    // If name is blank we let the user know it is required
+    if (name === '') {
+      setErrorMessage('Name is Required');
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+    }
+    // If message is blank we let the user know it is required
+    if (message === '') {
+      setErrorMessage('Message is Required');
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+    }
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setName('');
