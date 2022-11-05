@@ -3,15 +3,8 @@ import React from 'react';
 export default function Resume() {
   return (
     <section>
-      <h1>Resume</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
+      <a href="assests/resume/Lucas Freigenberg Resume.pdf" download>
+      <h3>Click here to download My Resume 📝</h3></a>
     </section>
   );
 }

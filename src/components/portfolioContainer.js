@@ -18,7 +18,7 @@ const projects = [
     description: 'This is a Full Stack single page application that uses a mySQL Database and is hosted on Heroku.  It uses many differenet technology such as HTML, CSS, bootstrap, JavaScript, Express.js, Node.js, mySQL, Sequilize(mySQL ORM), bcrypt, and was developed with nodemon.',
     url: 'https://gentle-caverns-83915.herokuapp.com/login',
     githubURL: `https://github.com/mountaindriver/Tech-Blogger`,
-    image: `./assests/images/screencapture-gentle-caverns-83915-herokuapp-2022-11-04-13_33_03.png`,
+    image: `./assests/images/techbloggersnip.png`,
     technologies: [
       'HTML', 
       'CSS', 
