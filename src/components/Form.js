@@ -65,52 +65,52 @@ function Form() {
 
   return (
     <section>
-      <form className="form">
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon3">Email</span>
+      <form className='form'>
+        <div className='input-group mb-3'>
+          <div className='input-group-prepend'>
+            <span className='input-group-text' id='basic-addon3'>Email</span>
           </div>
           <input
-            class="form-control"
+            className='form-control'
             value={email}
-            name="email"
+            name='email'
             onChange={handleInputChange}
-            type="email"
-            placeholder="Email"
+            type='email'
+            placeholder='Email'
           />
         </div>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon3">Name</span>
+        <div className='input-group mb-3'>
+          <div className='input-group-prepend'>
+            <span className='input-group-text' id='basic-addon3'>Name</span>
           </div>
           <input
-            class="form-control"
+            className='form-control'
             value={name}
-            name="name"
+            name='name'
             onChange={handleInputChange}
-            type="name"
-            placeholder="Name"
+            type='name'
+            placeholder='Name'
           />
         </div>
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon3">Message</span>
+        <div className='input-group'>
+          <div className='input-group-prepend'>
+            <span className='input-group-text' id='basic-addon3'>Message</span>
           </div>
           <textarea
-            class="form-control"
+            className='form-control'
             value={message}
-            message="message"
+            message='message'
             onChange={handleInputChange}
-            type="message"
-            placeholder="Message"
+            type='message'
+            placeholder='Message'
           />
         </div>
         <br></br>
-        <button className="btn btn-success btn-lg btn-block" onClick={handleFormSubmit}>Send</button>
+        <button className='' onClick={handleFormSubmit}>Send</button>
       </form>
       {errorMessage && (
         <div>
-          <p className="error-text">{errorMessage}</p>
+          <p className='error-text'>{errorMessage}</p>
         </div>
       )}
     </section>

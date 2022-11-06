@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 // Components
-import NavTabs from './NavTabs';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -137,8 +136,7 @@ export default function PortfolioContainer(){
     return (
       <div>
         {/* We are passing the currentPage from state and the function to update it */}
-        <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-        <Header />
+        <Header currentPage={currentPage} handlePageChange={handlePageChange} />
         {/* Here we are calling the renderPage method which will return a component  */}
         {renderPage()}
         {/* no footer on contact page */}
