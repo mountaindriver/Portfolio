@@ -106,7 +106,7 @@ function Form() {
           />
         </div>
         <br></br>
-        <button className='' onClick={handleFormSubmit}>Send</button>
+        <button className='pbtn btn btn-lg btn-block' onClick={handleFormSubmit}>Send</button>
       </form>
       {errorMessage && (
         <div>

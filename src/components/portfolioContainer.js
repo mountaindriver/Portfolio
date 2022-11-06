@@ -14,7 +14,7 @@ const projects = [
   {
     id: 1,
     name: "Tech Blogger",
-    description: 'This is a Full Stack single page application that uses a mySQL Database and is hosted on Heroku.  It uses many differenet technology such as HTML, CSS, bootstrap, JavaScript, Express.js, Node.js, mySQL, Sequilize(mySQL ORM), bcrypt, and was developed with nodemon.',
+    description: 'This is a Full Stack single page application that uses a mySQL Database and is hosted on Heroku.  It uses many differenet technologies such as HTML, CSS, Bootstrap, JavaScript, Express.js, Node.js, mySQL, Sequilize (mySQL ORM), bcrypt, and was developed with nodemon.',
     url: 'https://gentle-caverns-83915.herokuapp.com/login',
     githubURL: `https://github.com/mountaindriver/Tech-Blogger`,
     image: `./assests/images/techbloggersnip.png`,
@@ -48,8 +48,8 @@ const projects = [
   },
   {
     id: 3,
-    name: 'Covid Travling Guide',
-    description: `Collaborative Team Project to develop a front end website that uses multipe Third Party API's to create a tool to help travelers decide where to go for vaction.`,
+    name: 'Covid Traveling Guide',
+    description: `Collaborative Team Project to develop a front end website that uses multipe Third Party API's to create a tool to help travelers decide where to go for vacation.`,
     url: 'https://mountaindriver.github.io/super-team-project/',
     githubURL: `https://github.com/mountaindriver/super-team-project`,
     image: './assests/images/screencapture-mountaindriver-github-io-super-team-project-2022-11-04-13_37_19.png',
@@ -84,7 +84,7 @@ const projects = [
   {
     id: 5,
     name: 'NoSQL API for Social Network',
-    description: 'A API that is created using MongoDB and JavaScript. The database uses Express.js and Mongoose as the ORM. This is not a deployed website but there is a link to a walk through video in the README.',
+    description: 'This is an API that is created using MongoDB and JavaScript. The database uses Express.js and Mongoose as the ORM. This is not a deployed website but there is a link to a walk through video in the README.',
     url: 'https://github.com/mountaindriver/NoSQL-API-for-Social-Network',
     githubURL: `https://github.com/mountaindriver/NoSQL-API-for-Social-Network`,
     image: `assests/images/screencapture-github-mountaindriver-NoSQL-API-for-Social-Network-2022-11-04-13_31_00.png`,

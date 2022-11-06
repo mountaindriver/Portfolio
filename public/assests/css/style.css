@@ -1,0 +1,157 @@
+:root {
+    --clr-neautral-900: #000;
+    --clr-neautral-100: #fff;
+
+    --clr-palett-100: #FFBE0B;
+    --clr-palett-200: #F4EDEA;
+    --clr-palett-400: #C5D8D1;
+    --clr-palett-600: #06BCC1;
+    --clr-palett-800: #132A3F;
+    --clr-palett-900:  #386641;
+}
+
+body {
+    background-image: url(../images/PXL_20221002_183657650.jpg);
+}
+
+.nav {
+    background-color: var(--clr-palett-900);
+    color: #FFBE0B;
+    margin: 0;
+    padding: 1rem 0rem;
+    border-bottom:  var(--clr-palett-100) 4px solid;
+  
+
+}
+
+span {
+    color: var(--clr-palett-900);
+    text-decoration: underline;
+}
+
+.pActive{
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    text-decoration: underline;    
+    margin-bottom: -1px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem
+}
+
+.nav a,li {
+    color:var(--clr-)
+}
+
+/* .work{
+    display: block;
+    justify-content: center;
+} */
+
+.introCard {
+    font-family: 'Handlee', cursive;
+    background-color: var(--clr-palett-900);
+    color: var(--clr-neautral-900);
+    padding: 2rem;
+}
+
+.introCard h1 {
+    font-family: 'Vollkorn', serif;
+}
+
+.introCard img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.pCard {
+    background-color: var(--clr-palett-400);
+    padding: 2rem;
+    margin: 1rem .5rem;
+    border: var(--clr-palett-200) 2px solid;
+    border-radius: .5rem;
+    width: auto;
+}
+
+.pCard img {
+    width:100%;
+    border-radius: .5rem;
+}
+
+.pCardBody {
+    margin: 1rem 0rem;
+}
+
+.pCardFooter{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pbtn {
+    background-color: var(--clr-palett-900);
+    font-size: 1rem;
+    padding: .5em .75em;
+    border-radius: .3em;
+    color: var(--clr-palett-400);
+    margin: .25em;
+
+    transition: transform 300ms ease;
+
+}
+
+.pbtn2{
+    background-color: var(--clr-palett-400);
+    border: var(--clr-palett-900) 3px solid;
+    color: var(--clr-palett-900);
+}
+
+
+
+.pbtn:hover {
+    color: var(--clr-palett-100);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+
+    transform: scale(1.05)
+
+}
+
+
+
+
+footer {
+    margin-top: 1rem;
+    background-color: var(--clr-palett-900);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+footer a {
+    color: var(--clr-neautral-900);
+    margin: 2rem;
+    transition: transform 300ms ease;
+    
+}
+
+footer a:hover {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transform: scale(1.05)
+}
+
+footer img {
+    margin-left: .4rem;
+}
+
+@media screen and (min-width: 420px) {    
+    .pCard{
+        max-width: 40%;
+    }
+    .pCard img
+    
+}
