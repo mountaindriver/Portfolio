@@ -13,6 +13,12 @@
 body {
     background-image: url(../images/PXL_20221002_183657650.jpg);
 }
+.portfolio-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
 
 .nav {
     background-color: var(--clr-palett-900);
@@ -20,8 +26,11 @@ body {
     margin: 0;
     padding: 1rem 0rem;
     border-bottom:  var(--clr-palett-100) 4px solid;
-  
 
+}
+
+pre {
+    color: red;
 }
 
 span {
@@ -127,7 +136,6 @@ footer {
     padding: 1rem 2rem;
     display: flex;
     justify-content: center;
-
 }
 
 footer a {
