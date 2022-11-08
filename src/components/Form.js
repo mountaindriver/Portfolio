@@ -31,7 +31,7 @@ function Form() {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
     let errors = []
-    setErrorMessage('wd');
+    setErrorMessage('');
     // First we check to see if the email is not valid. If so we set an error message to be displayed on the page.
     if (!validateEmail(email)) {
       errors.push('* Email is invalid\n');
@@ -42,7 +42,7 @@ function Form() {
     }
     // If name is blank we let the user know it is required
     if (name === '') {
-      errors.push('* Name is Required\n');     
+      errors.push('* Name is Required\n');
     }
     // If message is blank we let the user know it is required
     if (message === '') {
@@ -50,8 +50,8 @@ function Form() {
     }
     let newerrors = errors.join('')
     setErrorMessage(newerrors)
-    if(errorMessage !== ''){
-      return
+    if (errorMessage !== '') {
+      return;
     }
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
@@ -63,49 +63,48 @@ function Form() {
 
   return (
     <section>
-      <form className='form'>
-        <div className='input-group mb-3'>
-          <div className='input-group-prepend'>
-            <span className='input-group-text' id='basic-addon3'>Email</span>
-          </div>
-          <input
-            className='form-control'
-            value={email}
-            name='email'
-            onChange={handleInputChange}
-            type='email'
-            placeholder='Email'
-          />
+      <div className='input-group mb-3'>
+        <div className='input-group-prepend'>
+          <span className='input-group-text' id='basic-addon3'>Email</span>
         </div>
-        <div className='input-group mb-3'>
-          <div className='input-group-prepend'>
-            <span className='input-group-text' id='basic-addon3'>Name</span>
-          </div>
-          <input
-            className='form-control'
-            value={name}
-            name='name'
-            onChange={handleInputChange}
-            type='name'
-            placeholder='Name'
-          />
+        <input
+          className='form-control'
+          value={email}
+          name='email'
+          onChange={handleInputChange}
+          type='email'
+          placeholder='Email'
+        />
+      </div>
+      <div className='input-group mb-3'>
+        <div className='input-group-prepend'>
+          <span className='input-group-text' id='basic-addon3'>Name</span>
         </div>
-        <div className='input-group'>
-          <div className='input-group-prepend'>
-            <span className='input-group-text' id='basic-addon3'>Message</span>
-          </div>
-          <textarea
-            className='form-control'
-            value={message}
-            message='message'
-            onChange={handleInputChange}
-            type='message'
-            placeholder='Message'
-          />
+        <input
+          className='form-control'
+          value={name}
+          name='name'
+          onChange={handleInputChange}
+          type='name'
+          placeholder='Name'
+        />
+      </div>
+      <div className='input-group mb-3'>
+        <div className='input-group-prepend'>
+          <span className='input-group-text' id='basic-addon3'>Message</span>
         </div>
-        <br></br>
-        <button className='pbtn btn btn-lg btn-block' onClick={handleFormSubmit}>Send</button>
-      </form>
+        <textarea
+          className='form-control'
+          value={message}
+          message='message'
+          onChange={handleInputChange}
+          type='message'
+          placeholder='Message'
+        />
+      </div>
+      <br></br>
+      <button className='pbtn btn btn-lg btn-block' onClick={handleFormSubmit}>Send</button>
+
       {errorMessage && (
         <div>
           <pre className='error-text'>{errorMessage}</pre>

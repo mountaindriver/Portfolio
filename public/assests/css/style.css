@@ -52,26 +52,25 @@ h3 {
     padding: 2rem;
 }
 
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
 .pActive {
-    font-weight: 500;
     padding: 0.5rem 1rem;
-    text-decoration: underline;
-    margin-bottom: -1px;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
     text-decoration: none;
 }
 
-.nav a,
-li {
-    color: var(--clr-)
+.nav a {
+    color: var(--clr-);
+    font-size: 1.1rem
 }
 
 .aCard {
     margin: 2rem 1rem;
-    max-width: 650px;
+    max-width: 600px;
     background-color: var(--clr-palett-400);
     padding: 3rem;
     display: flex;
@@ -90,12 +89,6 @@ li {
     width: 100%;
 }
 
-.work {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center
-}
-
 .aCardBody {
     opacity: 0;
     background-color: var(--clr-palett-400);
@@ -111,6 +104,7 @@ li {
 .pbtn {
     background-color: var(--clr-palett-900);
     font-size: 1rem;
+    max-height: 5rem;
     padding: .5em .75em;
     border-radius: .3em;
     color: var(--clr-palett-400);
@@ -134,6 +128,10 @@ li {
 
 .pbtn2:hover {
     color: var(--clr-palett-900);
+}
+
+.error-text{
+    color: red;
 }
 
 footer {
