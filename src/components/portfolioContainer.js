@@ -87,7 +87,7 @@ const projects = [
     description: 'This is an API that is created using MongoDB and JavaScript. The database uses Express.js and Mongoose as the ORM. This is not a deployed website but there is a link to a walk through video in the README.',
     url: 'https://github.com/mountaindriver/NoSQL-API-for-Social-Network',
     githubURL: `https://github.com/mountaindriver/NoSQL-API-for-Social-Network`,
-    image: `assests/images/screencapture-github-mountaindriver-NoSQL-API-for-Social-Network-2022-11-04-13_31_00.png`,
+    image: `./assests/images/screencapture-github-mountaindriver-NoSQL-API-for-Social-Network-2022-11-04-13_31_00.png`,
     technologies: [
       'MonogoDB',
       'Mongoose',
