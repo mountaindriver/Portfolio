@@ -84,11 +84,6 @@ section {
 
 }
 
-.aCard img {
-    margin: auto;
-    width: 100%;
-}
-
 .aCardBody {
     opacity: 0;
     background-color: var(--clr-palett-400);
@@ -99,6 +94,17 @@ section {
 
 .aCardBody:hover {
     opacity: 1;
+}
+
+.aImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.aImg img {
+    width: 100%;
+    border-radius: .25rem;
 }
 
 .pbtn {
