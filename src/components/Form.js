@@ -29,6 +29,7 @@ function Form() {
 
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
+    // For every error in the form we put the string to the errors array and then display it on the page at the end
     e.preventDefault();
     let errors = []
     setErrorMessage('');
@@ -50,11 +51,12 @@ function Form() {
     }
     let newerrors = errors.join('')
     setErrorMessage(newerrors)
+    // if there are errors the fuction is stoped and the user has a the ability to fix their mistake
     if (errorMessage !== '') {
       return;
     }
 
-    // If everything goes according to plan, we want to clear out the input after a successful registration.
+    // If there are no erros we want to clear out the input after a successful registration.
     setName('');
     setMessage('');
     setEmail('');

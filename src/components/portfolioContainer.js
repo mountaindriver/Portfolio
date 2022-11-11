@@ -9,7 +9,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
-
+// This is the list of project that will be rendered on the Portfolio screen
 const projects = [
   {
     id: 1,

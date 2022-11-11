@@ -1,5 +1,6 @@
 import React from 'react';
 
+// This page allows user to download my resume
 export default function Resume() {
   return (
     <section>

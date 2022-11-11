@@ -1,6 +1,7 @@
 import React from 'react';
 import Form from '../Form';
 
+// This page renders this card and within the card a form component is rendered
 export default function Contact() {
   return (
     <section>

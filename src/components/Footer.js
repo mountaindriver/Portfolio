@@ -1,5 +1,6 @@
 import React from 'react';
 
+// This is the footer that has links to my professional portfolios
 export default function Header() {
     return (
         <footer>

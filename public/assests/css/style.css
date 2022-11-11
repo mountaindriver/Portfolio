@@ -3,15 +3,11 @@
     --clr-neautral-100: #fff;
 
     --clr-palett-100: #FFBE0B;
-    --clr-palett-200: #F4EDEA;
     --clr-palett-400: #C5D8D1;
-    --clr-palett-600: #06BCC1;
-    --clr-palett-800: #132A3F;
     --clr-palett-900: #386641;
 }
 
 *{
-    
     font-family: 'Handlee', cursive;
     font-weight: 500;
 }
@@ -24,6 +20,7 @@ body {
     /* background by SVGBackgrounds.com */
 }
 
+/* This the the container everthing goes into */
 .portfolio-app {
     display: flex;
     flex-direction: column;
@@ -31,6 +28,7 @@ body {
     height: 100vh;
 }
 
+/* This adjusts the standard boot strap and makes it my own */
 .nav {
     background-color: var(--clr-palett-900);
     color: #FFBE0B;
@@ -68,6 +66,7 @@ section {
     font-size: 1.1rem
 }
 
+/* This is the base card styling for most things on the website */
 .aCard {
     margin: 2rem 1rem;
     max-width: 600px;

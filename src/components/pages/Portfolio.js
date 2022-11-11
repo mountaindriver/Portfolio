@@ -1,5 +1,6 @@
 import React from 'react';
 
+// This page creates a card for every one of my projects i'd like to display
 export default function Portfolio(projects) {
   return (
     <section>
