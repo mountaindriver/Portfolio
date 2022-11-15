@@ -6,7 +6,7 @@
   <div align="center">
         <a href="https://github.com/mountaindriver/Portfolio-2022">
         </a>
-        <h3 align="center">Professtional Portfolio Resume</h3>
+        <h3 align="center">Portfolio Resume</h3>
         <p align="center">
         <br>
         <a href="https://github.com/mountaindriver/Portfolio-2022"><strong>Explore the docs »</strong></a>
