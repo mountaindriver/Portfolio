@@ -64,7 +64,7 @@ function Form() {
   };
 
   return (
-    <section>
+    <form>
       <div className='input-group mb-3'>
         <div className='input-group-prepend'>
           <span className='input-group-text' id='basic-addon3'>Email</span>
@@ -112,7 +112,7 @@ function Form() {
           <pre className='error-text'>{errorMessage}</pre>
         </div>
       )}
-    </section>
+    </form>
   );
 }
 
