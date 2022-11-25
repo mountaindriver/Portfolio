@@ -86,6 +86,10 @@ form {
     justify-content: center
 }
 
+ul{
+   list-style-type: none;
+}
+
 /* This is the base card styling for most things on the website */
 .aCard {
     max-width: 600px;
@@ -135,11 +139,19 @@ form {
     color: var(--clr-palett-400);
     margin: .25em;
     border: var(--clr-palett-900) 3px solid;
+    
 }
 
 .pbtn2 {
     background-color: var(--clr-palett-400);
     color: var(--clr-palett-900);
+}
+
+.pbtn3 {
+    margin: .1rem;
+    padding: .25rem;
+    border: var(--clr-palett-900) 2px solid;
+    border-radius: 1rem;
 }
 
 .pbtn:hover {
