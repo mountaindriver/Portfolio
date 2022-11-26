@@ -5,14 +5,14 @@ export default function About() {
     <section>
       <article className='aCard'>
         <h1>Hello, I'm A <span>Full Stack</span> Web Developer 🤓</h1>
-        <p>I'm <span>Lucas</span> web developer from Utah. Who loves to create, problem solve and learn new technologies. I'm currently working with the MERN Stack but concurrently learning new technologies.</p>
+        <p>I'm <span>Lucas</span> web developer from Utah, who loves to create and problem solve. I'm currently working with the MERN Stack but concurrently learning new technologies.</p>
         <div className='aImg'>
           <img src='./assests/images/outdoorsyProfile.jpg' alt='Lucas Freigenberg Mountian Biking' />
         </div>
         <br />
-      <h3 ><span>"I'd be more frightened by not using whatever abilities I'd been given. I'd be more frightened by procrastination and laziness"</span></h3>
+      <h3 ><span>"I'd be more frightened by not using whatever abilities I'd been given. I'd be more frightened by procrastination and laziness" -Denzel Washington</span></h3>
         <h1>Mission Statement</h1>
-        <p>During my time learning and developing code, one of the things I'm most proud of is I never missed a day or a task.  Sure, I still took days off but I completed every single task and showed up every time there was class, meetings, or work to be done.   People say that 75%-95% of coding is fixing bugs and problem solving.  Therefore I always go in with the growth mindset of trying everything, failing, and going at it again and if nesscerary getting help till I understood the problem.  Then when it all said and done being proud of the finished product.</p>
+        <p>During my time learning and developing code, one of the things I'm most proud of is I never missed a day or a task.  Sure, I still took days off but I completed every single task and showed up every time there was class, meetings, or work to be done.   People say that 75%-95% of coding is fixing bugs and problem solving.  Therefore I always go in with the growth mindset of trying everything, failing, and going at it again and if nessecary getting help till I understood the problem.  Then when it is all said, I am proud of the finished product.</p>
         <h2>I have experience learning these technologies:</h2>
         <ul className='d-flex flex-wrap'>
             <li className='pbtn3'>JavaScript</li>
@@ -33,7 +33,7 @@ export default function About() {
             <li className='pbtn3'>Bootstrap</li>
             <li className='pbtn3'>Foundations</li>
         </ul>
-        <h2>I am currnetly working on these:</h2>
+        <h2>I am currently working on these:</h2>
         <ul className='d-flex flex-wrap'>
           <li className='pbtn3'>Next.js</li>
           <li className='pbtn3'>Python</li>

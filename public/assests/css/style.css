@@ -133,7 +133,7 @@ ul{
 .pbtn {
     background-color: var(--clr-palett-900);
     font-size: 1rem;
-    max-height: 5rem;
+    height: 2.8rem;
     padding: .5em .75em;
     border-radius: 1em;
     color: var(--clr-palett-400);
@@ -155,7 +155,7 @@ ul{
 }
 
 .pbtn:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
 
     color: var(--clr-palett-400);
     text-decoration: none;
