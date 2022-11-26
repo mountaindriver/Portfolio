@@ -7,7 +7,7 @@
     --clr-palett-900: #386641;
 }
 
-*{
+* {
     font-family: 'Handlee', cursive;
     font-weight: 500;
 }
@@ -28,14 +28,38 @@ body {
     height: 100vh;
 }
 
-/* This adjusts the standard boot strap and makes it my own */
 .nav {
-    background-color: var(--clr-palett-900);
-    color: #FFBE0B;
     margin: 0;
     padding: 1rem 0rem;
+    background-color: var(--clr-palett-900);
     border-bottom: var(--clr-palett-900) 4px solid;
+    justify-content: space-evenly;
 
+}
+
+.nav a {
+    border-radius: 1rem;
+}
+
+.pNav{
+    color: var(--clr-palett-400);
+}
+
+.pActive {
+    padding: .6rem;
+    color: var(--clr-neautral-900);
+    background-color: var(--clr-palett-100);
+}
+
+.nav a:hover {
+    color: var(--clr-neautral-900);
+    text-decoration: none;
+}
+
+.nav a:active{
+    padding: .6rem;
+    background-color: var(--clr-palett-100);
+    
 }
 
 pre {
@@ -56,20 +80,20 @@ section {
     justify-content: center
 }
 
-.pActive {
-    padding: 0.5rem 1rem;
-    text-decoration: none;
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
 }
 
-.nav a {
-    color: var(--clr-);
-    font-size: 1.1rem
+ul{
+   list-style-type: none;
 }
 
 /* This is the base card styling for most things on the website */
 .aCard {
-    margin: 2rem 1rem;
     max-width: 600px;
+    margin: 2rem 1rem;
     background-color: var(--clr-palett-400);
     padding: 3rem;
     display: flex;
@@ -86,9 +110,9 @@ section {
 .aCardBody {
     opacity: 0;
     background-color: var(--clr-palett-400);
+
+    padding: 2rem;
     border-radius: 1rem;
-    padding: 1rem;
-    height: 100%;
 }
 
 .aCardBody:hover {
@@ -109,12 +133,13 @@ section {
 .pbtn {
     background-color: var(--clr-palett-900);
     font-size: 1rem;
-    max-height: 5rem;
+    height: 2.8rem;
     padding: .5em .75em;
-    border-radius: .3em;
+    border-radius: 1em;
     color: var(--clr-palett-400);
     margin: .25em;
     border: var(--clr-palett-900) 3px solid;
+    
 }
 
 .pbtn2 {
@@ -122,8 +147,15 @@ section {
     color: var(--clr-palett-900);
 }
 
+.pbtn3 {
+    margin: .1rem;
+    padding: .25rem;
+    border: var(--clr-palett-900) 2px solid;
+    border-radius: 1rem;
+}
+
 .pbtn:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 
     color: var(--clr-palett-400);
     text-decoration: none;
@@ -135,14 +167,14 @@ section {
     color: var(--clr-palett-900);
 }
 
-.error-text{
+.error-text {
     color: red;
 }
 
 footer {
     margin-top: 1rem;
     background-color: var(--clr-palett-900);
-    padding: .5rem 1rem;
+    padding: .25rem .5rem;
     display: flex;
     justify-content: center;
 }
@@ -150,11 +182,14 @@ footer {
 footer a {
     color: var(--clr-neautral-900);
     margin: 2rem;
+    padding: .5rem;
 }
 
 footer a:hover {
-    color: black;
+    color: var(--clr-neautral-900);
+    background-color: var(--clr-palett-100);
+    border-radius: 1rem;
     text-decoration: none;
     font-weight: bold;
-    transform: scale(1.05)
+    transform: scale(1.02)
 }
