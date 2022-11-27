@@ -20,6 +20,7 @@ export default function Portfolio(projects) {
             <div className='aCardBody'>
               <h5>{project.name}</h5>
               <p>{project.description}</p>
+              <p>Technologies Used: {project.tech}</p>
               <div className='pCardFooter'>
                 <a href={project.url} className='pbtn'>Website</a>
                 <a href={project.githubURL} className='pbtn pbtn2'>Repo</a>

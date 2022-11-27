@@ -18,6 +18,7 @@ const projects = [
     url: 'https://gentle-caverns-83915.herokuapp.com/login',
     githubURL: `https://github.com/mountaindriver/Tech-Blogger`,
     image: `./assests/images/techbloggersnip.png`,
+    tech: `Express, Node, MySQL, Sequlized, bcrypt, .env`,
     technologies: [
       'HTML', 
       'CSS', 
@@ -37,6 +38,7 @@ const projects = [
     url: 'https://mountaindriver.github.io/Weather-API-Dashboard/',
     githubURL: `https://github.com/mountaindriver/Weather-API-Dashboard`,
     image: `./assests/images/screencapture-mountaindriver-github-io-Weather-API-Dashboard-2022-11-04-13_38_31.png`,
+    tech: `HTML, CSS, JavaScript, Bootstrap, jQuery, Third Party API`,
     technologies: [
       'HTML', 
       'CSS', 
@@ -53,6 +55,7 @@ const projects = [
     url: 'https://mountaindriver.github.io/super-team-project/',
     githubURL: `https://github.com/mountaindriver/super-team-project`,
     image: './assests/images/screencapture-mountaindriver-github-io-super-team-project-2022-11-04-13_37_19.png',
+    tech: `HTML, CSS, JavaScript, Bootstrap, jQuery, Third Party API`,
     technologies: [
       'HTML', 
       'CSS', 
@@ -69,6 +72,7 @@ const projects = [
     url: 'https://murmuring-sea-48556.herokuapp.com/',
     githubURL: `https://github.com/lcsantana1/Recipe-Finder`,
     image: 'https://user-images.githubusercontent.com/106941418/193163516-b5a97c92-7a7d-400b-955e-db0a362c4d94.png',
+    tech: `Express, Node, MySQL, Sequlized, bcrypt, .env`,
     technologies: [
       'HTML', 
       'CSS', 
@@ -88,6 +92,7 @@ const projects = [
     url: 'https://github.com/mountaindriver/NoSQL-API-for-Social-Network',
     githubURL: `https://github.com/mountaindriver/NoSQL-API-for-Social-Network`,
     image: `./assests/images/screencapture-github-mountaindriver-NoSQL-API-for-Social-Network-2022-11-04-13_31_00.png`,
+    tech: `MongoDB, Mongoose, Node, Express, Insomnia`,
     technologies: [
       'MonogoDB',
       'Mongoose',

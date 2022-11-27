@@ -9,6 +9,7 @@ export default function About() {
         <div className='aImg'>
           <img src='./assests/images/outdoorsyProfile.jpg' alt='Lucas Freigenberg Mountian Biking' />
         </div>
+        <h5>Email: <a href='mailto:lsfreigenberg@outlook.com'>lsfreigenberg@outlook.com</a></h5>
         <br />
       <h3 ><span>"I'd be more frightened by not using whatever abilities I'd been given. I'd be more frightened by procrastination and laziness" -Denzel Washington</span></h3>
         <h1>Mission Statement</h1>
