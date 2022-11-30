@@ -1,9 +1,14 @@
-import React, { useState } from 'react';
 
-// Here we import a helper function that will check if the email is valid
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
+
+// // Here we import a helper function that will check if the email is valid
 import { validateEmail } from '../utils/helpers';
 
 function Form() {
+  const form = useRef();
+
   // Create state variables for the fields in the form
   // We are also setting their initial values to an empty string
   const [email, setEmail] = useState('');
@@ -54,8 +59,20 @@ function Form() {
     // if there are errors the fuction is stoped and the user has a the ability to fix their mistake
     if (errorMessage !== '') {
       return;
-    }
+    } else {
+      const sendEmail = (e) => {
+        e.preventDefault();
+        console.log(form.current);
 
+        emailjs.sendForm('service_z462rs9', 'template_brvfken', form.current, 'TculVHgXqPtIaF4LG')
+          .then((result) => {
+            console.log(result.text);
+          }, (error) => {
+            console.log(error.text);
+          });
+      };
+      sendEmail(e);
+    }
     // If there are no erros we want to clear out the input after a successful registration.
     setName('');
     setMessage('');
@@ -64,11 +81,11 @@ function Form() {
   };
 
   return (
-    <form>
+    <form ref={form}>
       <div className='input-group mb-3'>
-        <div className='input-group-prepend'>
+        <label className='input-group-prepend'>
           <span className='input-group-text' id='basic-addon3'>Email</span>
-        </div>
+        </label>
         <input
           className='form-control'
           value={email}
@@ -79,9 +96,9 @@ function Form() {
         />
       </div>
       <div className='input-group mb-3'>
-        <div className='input-group-prepend'>
+        <label className='input-group-prepend'>
           <span className='input-group-text' id='basic-addon3'>Name</span>
-        </div>
+        </label>
         <input
           className='form-control'
           value={name}
@@ -92,13 +109,13 @@ function Form() {
         />
       </div>
       <div className='input-group mb-3'>
-        <div className='input-group-prepend'>
+        <label className='input-group-prepend'>
           <span className='input-group-text' id='basic-addon3'>Message</span>
-        </div>
+        </label>
         <textarea
           className='form-control'
           value={message}
-          message='message'
+          name='message'
           onChange={handleInputChange}
           type='message'
           placeholder='Message'

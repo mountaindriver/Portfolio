@@ -12,6 +12,15 @@ import Resume from '../pages/Resume';
 // This is the list of project that will be rendered on the Portfolio screen
 const projects = [
   {
+    id: 6,
+    name: `Eric's Emporium (Team Project)`,
+    description: 'This website was created using the MERN stack to show our proficiency with the tools included. Our motivation was to build a fast responding E-commerce site that a user could add items to a wishlist or to their cart.',
+    url: `https://erics-emporium.herokuapp.com/`,
+    githubURL: 'https://github.com/ccottrell52/E-commerce-Project3',
+    image: './assests/images/screencapture-erics-emporium-herokuapp-2022-11-30-09_40_46.png',
+    tech: `MongoDB, Express, React, Node, Graphql, Apollo`
+  },
+  {
     id: 1,
     name: "Tech Blogger",
     description: 'This is a Full Stack single page application that uses a mySQL Database and is hosted on Heroku.  It uses many differenet technologies such as HTML, CSS, Bootstrap, JavaScript, Express.js, Node.js, mySQL, Sequilize (mySQL ORM), bcrypt, and was developed with nodemon.',
@@ -50,7 +59,7 @@ const projects = [
   },
   {
     id: 3,
-    name: 'Covid Traveling Guide',
+    name: 'Covid Traveling Guide (Team Project)',
     description: `Collaborative Team Project to develop a front end website that uses multipe Third Party API's to create a tool to help travelers decide where to go for vacation.`,
     url: 'https://mountaindriver.github.io/super-team-project/',
     githubURL: `https://github.com/mountaindriver/super-team-project`,
@@ -67,7 +76,7 @@ const projects = [
   },
   {
     id: 4,
-    name: 'Recipe Finder',
+    name: 'Recipe Finder (Team Project)',
     description: `Collaborative Team Project to develop a Full Stack Application.This app allows users to post to and browse a recipe database.`,
     url: 'https://murmuring-sea-48556.herokuapp.com/',
     githubURL: `https://github.com/lcsantana1/Recipe-Finder`,
@@ -99,19 +108,6 @@ const projects = [
       'Node.js',
       'Express',
       'Insomnia',
-    ]
-  },
-  {
-    id: 6,
-    name: 'Team Member Project',
-    description: `This is a Object-Oriented Programing application that uses Node.js to create a Command Line interface.  It will prompt users for a engineer team's contact information then using that information it will generate a website to easily view link to their contact information.`,
-    url: `https://github.com/mountaindriver/NoSQL-API-for-Social-Network`,
-    githubURL: `https://github.com/mountaindriver/Team-Profile-Generator`,
-    image: `./assests/images/screencapture-127-0-0-1-5500-dist-Example-Boss-sTeam-Member-Dashboard-html-2022-11-04-14_10_34.png`,
-    technologies: [
-      'Node.js',
-      'NPM',
-      'Inquirer',
     ]
   },
 ]

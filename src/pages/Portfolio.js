@@ -4,12 +4,12 @@ import React from 'react';
 export default function Portfolio(projects) {
   return (
     <section>
-      <div className='aCard'>
+      <article className='aCard'>
         <h1>Hey,👋 I'm <span>Lucas</span></h1>
-        <p>I'm a certified MERN Full Stack Developer connect with me on LinkedIn.  These are some of my projects, you can check out more of them on my Github.</p>
+        <p>I'm a certified MERN Full Stack Developer connect with me on LinkedIn.  These are some of my projects, you can check out more of them on my Github. For every Team project I was team lead.</p>
         <a href='https://www.linkedin.com/in/lucas-freigenberg-539338134/' className='pbtn'>LinkedIn</a>
         <a href='https://github.com/mountaindriver' className='pbtn pbtn2'>Github</a>
-      </div>
+      </article>
 
         {projects.projects.map((project) => (
           <article key={project.id} style={{
