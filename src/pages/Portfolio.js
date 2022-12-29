@@ -1,33 +1,54 @@
-import React from 'react';
+import React from "react";
 
 // This page creates a card for every one of my projects i'd like to display
 export default function Portfolio(projects) {
   return (
     <section>
-      <article className='aCard'>
-        <h1>Hey,👋 I'm <span>Lucas</span></h1>
-        <p>I'm a certified MERN Full Stack Developer connect with me on LinkedIn.  These are some of my projects, you can check out more of them on my Github. For every Team project I was team lead.</p>
-        <a href='https://www.linkedin.com/in/lucas-freigenberg-539338134/' className='pbtn'>LinkedIn</a>
-        <a href='https://github.com/mountaindriver' className='pbtn pbtn2'>Github</a>
+      <article className="aCard">
+        <h1>
+          Hey,👋 I'm <span>Lucas</span>
+        </h1>
+        <p>
+          I'm a certified MERN Full Stack Developer connect with me on LinkedIn.
+          These are some of my projects, you can check out more of them on my
+          Github. For every Team project I was team lead.
+        </p>
+        <a
+          href="https://www.linkedin.com/in/lucas-freigenberg-539338134/"
+          className="pbtn"
+        >
+          LinkedIn
+        </a>
+        <a href="https://github.com/mountaindriver" className="pbtn pbtn2">
+          Github
+        </a>
       </article>
 
-        {projects.projects.map((project) => (
-          <article key={project.id} style={{
+      {projects.projects.map((project) => (
+        <article
+          key={project.id}
+          style={{
             backgroundImage: `url(${project.image})`,
             backgroundPosition: `top`,
-            backgroundSize: `cover`
-          }} className='aCard'>
-            <div className='aCardBody'>
-              <h5>{project.name}</h5>
-              <p>{project.description}</p>
-              <p>Technologies Used: {project.tech}</p>
-              <div className='pCardFooter'>
-                <a href={project.url} className='pbtn'>Website</a>
-                <a href={project.githubURL} className='pbtn pbtn2'>Repo</a>
-              </div>
+            backgroundSize: `cover`,
+          }}
+          className="aCard"
+        >
+          <div className="aCardBody">
+            <h5>{project.name}</h5>
+            <p>{project.description}</p>
+            <p>Technologies Used: {project.tech}</p>
+            <div className="pCardFooter">
+              <a href={project.url} className="pbtn">
+                Website
+              </a>
+              <a href={project.githubURL} className="pbtn pbtn2">
+                Repo
+              </a>
             </div>
-          </article>
-        ))}
+          </div>
+        </article>
+      ))}
     </section>
   );
 }

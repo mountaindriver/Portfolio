@@ -1,6 +1,5 @@
-
-
 # Portfolio 2022
+
   <!-- PROJECT LOGO -->
   <br />
   <div align="center">
@@ -15,7 +14,6 @@
         </p>
   </div>
 
-
   <!-- TABLE OF CONTENTS -->
   <details>
     <summary>Table of Contents</summary>
@@ -26,13 +24,12 @@
     </ol>
   </details>
 
-  ![Portfolio ScreenShot](assests\images\screencapture-mountaindriver-github-io-Portfolio-2022-2022-11-15-15_08_51.png)
-  
-  ## Description
-  
-  This is a Full stack Sinlge page application using React.js.  The page features a Navbar that will change which component is currently rendered.  The site featues a short About page, a Portfolio of my most current work, a resume page that allows the user to download my resume, and a contact page that once filled out will email me a message directly from the website.  The styling is of my own creation and some of bootstrap's css framework.  
-  
-  
+![Portfolio ScreenShot](assests\images\screencapture-mountaindriver-github-io-Portfolio-2022-2022-11-15-15_08_51.png)
+
+## Description
+
+This is a Full stack Sinlge page application using React.js. The page features a Navbar that will change which component is currently rendered. The site featues a short About page, a Portfolio of my most current work, a resume page that allows the user to download my resume, and a contact page that once filled out will email me a message directly from the website. The styling is of my own creation and some of bootstrap's css framework.
+
   <p align="right">(<a href="#readme-top">back to top</a>)</p>
   
   
